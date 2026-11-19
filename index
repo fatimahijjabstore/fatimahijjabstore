@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fatima Hijjab Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>FATIMA HIJJAB STORE</h1>
+        <p>Elegance in Every Layer</p>
+    </header>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#products">Products</a>
+        <a href="#about">About Us</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <main>
+        <section class="hero">
+            <h2>Welcome to Fatima Hijjab Store</h2>
+            <p>Discover Your Modest Style</p>
+            <a href="#products" class="shop-btn">Shop Now</a>
+        </section>
+
+        <section id="products">
+            <h2>Our Products</h2>
+            <div id="product-list"></div>
+        </section>
+
+        <section id="about">
+            <h2>About Us</h2>
+            <p>Your destination for Hijabs, Abayas and Modest Fashion.</p>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>Order through WhatsApp</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 Fatima Hijjab Store. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
