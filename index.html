@@ -4,25 +4,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Shop premium hijabs, abayas and modest fashion at Fatima Hijjab Store.">
+    <meta name="description" content="Shop elegant abayas at Fatima Hijjab Store.">
     <meta name="theme-color" content="#ffffff">
-
-    <title>Fatima Hijjab Store | Modest Fashion</title>
-
-    
-<link rel="stylesheet" href="style.css">
+    <title>Fatima Hijjab Store | Elegant Abayas</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-    <!-- ANNOUNCEMENT BAR -->
     <div id="announcement-bar">
         <p>Welcome to Fatima Hijjab Store | Discover Your Modest Style</p>
     </div>
 
-    <!-- HEADER -->
     <header id="header">
-
         <div class="header-logo">
             <a href="#home">
                 <span>FATIMA</span>
@@ -39,235 +32,176 @@
         </nav>
 
         <div class="header-actions">
-            <a href="#products" aria-label="Search products">Search</a>
-            <a href="#cart" aria-label="Shopping cart">Cart (0)</a>
+            <a href="#products">Search</a>
+            <a href="#cart" aria-label="Shopping cart">
+                Cart (<span id="cart-count">0</span>)
+            </a>
         </div>
-
     </header>
 
     <main>
 
-        <!-- HOMEPAGE -->
+        <!-- HOME -->
         <section id="home">
-
             <div class="hero-content">
                 <p>MODEST FASHION COLLECTION</p>
-
                 <h1>Elegance in Every Layer</h1>
-
                 <p>
-                    Discover beautiful hijabs, elegant abayas
-                    and timeless modest fashion.
+                    Discover elegant abayas and timeless
+                    modest fashion at Fatima Hijjab Store.
                 </p>
-
                 <a href="#products">EXPLORE COLLECTION</a>
             </div>
 
             <div class="hero-image">
-                <img
-                    src=""
-                    alt="Fatima Hijjab Store featured collection"
-                >
+                <img src="images/abaya-1.jpg"
+                     alt="Fatima Hijjab Store Abaya Collection">
             </div>
-
         </section>
 
         <!-- CATEGORIES -->
         <section id="categories">
-
             <div class="section-heading">
                 <p>EXPLORE OUR COLLECTION</p>
                 <h2>Shop By Category</h2>
             </div>
 
             <div class="category-grid">
-
                 <article class="category-card">
-                    <img src="" alt="Hijab collection">
-                    <h3>Hijabs</h3>
-                    <a href="#products">Explore Hijabs</a>
-                </article>
-
-                <article class="category-card">
-                    <img src="" alt="Abaya collection">
+                    <img src="images/abaya-1.jpg" alt="Abaya Collection">
                     <h3>Abayas</h3>
                     <a href="#products">Explore Abayas</a>
                 </article>
-
-                <article class="category-card">
-                    <img src="" alt="Scarves collection">
-                    <h3>Scarves</h3>
-                    <a href="#products">Explore Scarves</a>
-                </article>
-
-                <article class="category-card">
-                    <img src="" alt="Modest fashion collection">
-                    <h3>Accessories</h3>
-                    <a href="#products">Explore Accessories</a>
-                </article>
-
             </div>
-
         </section>
 
         <!-- PRODUCTS -->
         <section id="products">
-
             <div class="section-heading">
                 <p>OUR LATEST COLLECTION</p>
-                <h2>Featured Products</h2>
-                <p>Find your favourite modest fashion essentials.</p>
+                <h2>Featured Abayas</h2>
+                <p>Explore our elegant Abaya collection.</p>
             </div>
 
             <div class="product-filters" aria-label="Product categories">
                 <button type="button" data-category="all">All Products</button>
-                <button type="button" data-category="hijab">Hijabs</button>
                 <button type="button" data-category="abaya">Abayas</button>
-                <button type="button" data-category="scarf">Scarves</button>
-                <button type="button" data-category="accessories">Accessories</button>
             </div>
 
             <div id="product-grid">
 
                 <!-- PRODUCT 1 -->
-                <article class="product-card" data-category="hijab">
+                <article class="product-card"
+                    data-product-id="abaya-1"
+                    data-category="abaya"
+                    data-brand="fatima-hijjab-store"
+                    data-name="Graceful Charcoal Abaya"
+                    data-price="3500"
+                    data-stock="20">
+
                     <a href="#product-details">
                         <div class="product-image">
-                            <img src="" alt="Premium hijab">
+                            <img src="images/abaya-1.jpg"
+                                 alt="Graceful Charcoal Abaya">
                         </div>
-                        <h3>Premium Hijab</h3>
+                        <h3>Graceful Charcoal Abaya</h3>
                     </a>
-                    <p class="product-price">Price: To be added</p>
-                    <button type="button">View Product</button>
+
+                    <p class="product-price">Rs. 3,500</p>
+                    <p class="product-stock">Available: 20 pieces</p>
+                    <button type="button" class="view-product">
+                        View Product
+                    </button>
                 </article>
 
                 <!-- PRODUCT 2 -->
-                <article class="product-card" data-category="hijab">
+                <article class="product-card"
+                    data-product-id="abaya-2"
+                    data-category="abaya"
+                    data-brand="fatima-hijjab-store"
+                    data-name="Elegant Plum Abaya"
+                    data-price="4000"
+                    data-stock="20">
+
                     <a href="#product-details">
                         <div class="product-image">
-                            <img src="" alt="Chiffon hijab">
+                            <img src="images/abaya-2.jpg"
+                                 alt="Elegant Plum Abaya">
                         </div>
-                        <h3>Chiffon Hijab</h3>
+                        <h3>Elegant Plum Abaya</h3>
                     </a>
-                    <p class="product-price">Price: To be added</p>
-                    <button type="button">View Product</button>
+
+                    <p class="product-price">Rs. 4,000</p>
+                    <p class="product-stock">Available: 20 pieces</p>
+                    <button type="button" class="view-product">
+                        View Product
+                    </button>
                 </article>
 
                 <!-- PRODUCT 3 -->
-                <article class="product-card" data-category="abaya">
-                    <a href="#product-details">
-                        <div class="product-image">
-                            <img src="" alt="Elegant abaya">
-                        </div>
-                        <h3>Elegant Abaya</h3>
-                    </a>
-                    <p class="product-price">Price: To be added</p>
-                    <button type="button">View Product</button>
-                </article>
+                <article class="product-card"
+                    data-product-id="abaya-3"
+                    data-category="abaya"
+                    data-brand="fatima-hijjab-store"
+                    data-name="Premium Black Embroidered Abaya"
+                    data-price="4500"
+                    data-stock="20">
 
-                <!-- PRODUCT 4 -->
-                <article class="product-card" data-category="scarf">
                     <a href="#product-details">
                         <div class="product-image">
-                            <img src="" alt="Premium scarf">
+                            <img src="images/abaya-3.jpg"
+                                 alt="Premium Black Embroidered Abaya">
                         </div>
-                        <h3>Premium Scarf</h3>
+                        <h3>Premium Black Embroidered Abaya</h3>
                     </a>
-                    <p class="product-price">Price: To be added</p>
-                    <button type="button">View Product</button>
-                </article>
 
-                <!-- PRODUCT 5 -->
-                <article class="product-card" data-category="abaya">
-                    <a href="#product-details">
-                        <div class="product-image">
-                            <img src="" alt="Classic abaya">
-                        </div>
-                        <h3>Classic Abaya</h3>
-                    </a>
-                    <p class="product-price">Price: To be added</p>
-                    <button type="button">View Product</button>
-                </article>
-
-                <!-- PRODUCT 6 -->
-                <article class="product-card" data-category="accessories">
-                    <a href="#product-details">
-                        <div class="product-image">
-                            <img src="" alt="Hijab accessories">
-                        </div>
-                        <h3>Hijab Accessories</h3>
-                    </a>
-                    <p class="product-price">Price: To be added</p>
-                    <button type="button">View Product</button>
-                </article>
-
-                <!-- PRODUCT 7 -->
-                <article class="product-card" data-category="hijab">
-                    <a href="#product-details">
-                        <div class="product-image">
-                            <img src="" alt="Everyday hijab">
-                        </div>
-                        <h3>Everyday Hijab</h3>
-                    </a>
-                    <p class="product-price">Price: To be added</p>
-                    <button type="button">View Product</button>
-                </article>
-
-                <!-- PRODUCT 8 -->
-                <article class="product-card" data-category="scarf">
-                    <a href="#product-details">
-                        <div class="product-image">
-                            <img src="" alt="Printed scarf">
-                        </div>
-                        <h3>Printed Scarf</h3>
-                    </a>
-                    <p class="product-price">Price: To be added</p>
-                    <button type="button">View Product</button>
+                    <p class="product-price">Rs. 4,500</p>
+                    <p class="product-stock">Available: 20 pieces</p>
+                    <button type="button" class="view-product">
+                        View Product
+                    </button>
                 </article>
 
             </div>
-
         </section>
 
         <!-- PRODUCT DETAILS -->
         <section id="product-details">
-
             <div class="section-heading">
                 <h2>Product Details</h2>
                 <p>Explore your selected product.</p>
             </div>
 
             <div class="product-detail-layout">
-
                 <div class="product-detail-image">
-                    <img src="" alt="Selected product image">
+                    <img id="detail-image" src="images/abaya-1.jpg"
+                         alt="Selected Abaya">
                 </div>
 
                 <div class="product-detail-info">
-                    <h2>Product Name</h2>
-                    <p>Product description will appear here.</p>
-                    <p>Price: To be added</p>
+                    <h2 id="detail-name">Select an Abaya</h2>
+                    <p id="detail-description">
+                        Choose an Abaya from our collection to see its details.
+                    </p>
+                    <p id="detail-price">Price: Select a product</p>
+                    <p id="detail-stock">Stock: Available</p>
 
                     <label for="product-quantity">Quantity</label>
-                    <input
-                        type="number"
-                        id="product-quantity"
-                        name="quantity"
-                        min="1"
-                        value="1"
-                    >
+                    <input type="number" id="product-quantity"
+                           name="quantity" min="1" value="1">
 
-                    <button type="button">Add to Cart</button>
-                    <button type="button">Buy Now</button>
+                    <button type="button" id="add-to-cart">
+                        Add to Cart
+                    </button>
+                    <button type="button" id="buy-now">
+                        Buy Now
+                    </button>
                 </div>
-
             </div>
-
         </section>
 
-        <!-- SHOPPING CART -->
+        <!-- CART -->
         <section id="cart">
-
             <div class="section-heading">
                 <h2>Your Shopping Cart</h2>
             </div>
@@ -277,134 +211,87 @@
             </div>
 
             <div class="cart-summary">
-                <p>Subtotal: PKR 0</p>
+                <p>Subtotal: <span id="cart-subtotal">PKR 0</span></p>
                 <p>Delivery Charges: To be calculated</p>
-                <h3>Total: PKR 0</h3>
-
+                <h3>Total: <span id="cart-total">PKR 0</span></h3>
                 <a href="#checkout">Proceed to Checkout</a>
             </div>
-
         </section>
 
         <!-- CHECKOUT -->
         <section id="checkout">
-
             <div class="section-heading">
                 <h2>Checkout</h2>
                 <p>Complete your details to place your order.</p>
             </div>
 
             <form id="checkout-form">
-
                 <fieldset>
                     <legend>Customer Information</legend>
 
                     <label for="customer-name">Full Name</label>
-                    <input
-                        type="text"
-                        id="customer-name"
-                        name="customerName"
-                        placeholder="Enter your full name"
-                        required
-                    >
+                    <input type="text" id="customer-name"
+                           name="customerName"
+                           placeholder="Enter your full name" required>
 
                     <label for="customer-phone">Mobile Number</label>
-                    <input
-                        type="tel"
-                        id="customer-phone"
-                        name="phone"
-                        placeholder="03XXXXXXXXX"
-                        required
-                    >
+                    <input type="tel" id="customer-phone"
+                           name="phone" placeholder="03XXXXXXXXX" required>
 
                     <label for="customer-email">Email Address</label>
-                    <input
-                        type="email"
-                        id="customer-email"
-                        name="email"
-                        placeholder="Enter your email"
-                    >
+                    <input type="email" id="customer-email"
+                           name="email" placeholder="Enter your email">
                 </fieldset>
 
                 <fieldset>
                     <legend>Delivery Address</legend>
 
                     <label for="customer-city">City</label>
-                    <input
-                        type="text"
-                        id="customer-city"
-                        name="city"
-                        placeholder="Enter your city"
-                        required
-                    >
+                    <input type="text" id="customer-city"
+                           name="city" placeholder="Enter your city" required>
 
                     <label for="customer-address">Complete Address</label>
-                    <textarea
-                        id="customer-address"
-                        name="address"
-                        placeholder="House number, street and area"
-                        required
-                    ></textarea>
+                    <textarea id="customer-address" name="address"
+                              placeholder="House number, street and area"
+                              required></textarea>
 
                     <label for="customer-postcode">Postal Code</label>
-                    <input
-                        type="text"
-                        id="customer-postcode"
-                        name="postcode"
-                        placeholder="Postal code"
-                    >
+                    <input type="text" id="customer-postcode"
+                           name="postcode" placeholder="Postal code">
                 </fieldset>
 
                 <fieldset>
                     <legend>Payment Method</legend>
 
                     <label>
-                        <input
-                            type="radio"
-                            name="payment"
-                            value="Cash on Delivery"
-                            checked
-                        >
+                        <input type="radio" name="payment"
+                               value="Cash on Delivery" checked>
                         Cash on Delivery
                     </label>
 
                     <label>
-                        <input
-                            type="radio"
-                            name="payment"
-                            value="JazzCash"
-                        >
+                        <input type="radio" name="payment" value="JazzCash">
                         JazzCash
                     </label>
 
                     <label>
-                        <input
-                            type="radio"
-                            name="payment"
-                            value="Easypaisa"
-                        >
+                        <input type="radio" name="payment" value="Easypaisa">
                         Easypaisa
                     </label>
 
                     <label>
-                        <input
-                            type="radio"
-                            name="payment"
-                            value="Bank Transfer"
-                        >
+                        <input type="radio" name="payment"
+                               value="Bank Transfer">
                         Bank Transfer
                     </label>
                 </fieldset>
 
                 <button type="submit">Place Order</button>
-
             </form>
-
         </section>
 
-        <!-- ABOUT US -->
+        <!-- ABOUT -->
         <section id="about">
-
             <div class="section-heading">
                 <p>OUR STORY</p>
                 <h2>About Fatima Hijjab Store</h2>
@@ -412,15 +299,13 @@
 
             <p>
                 Welcome to Fatima Hijjab Store, your destination
-                for beautiful hijabs, elegant abayas and modest fashion.
+                for elegant abayas and beautiful modest fashion.
                 Our aim is to make modest shopping simple and enjoyable.
             </p>
-
         </section>
 
         <!-- CONTACT -->
         <section id="contact">
-
             <div class="section-heading">
                 <p>WE ARE HERE TO HELP</p>
                 <h2>Contact Us</h2>
@@ -428,23 +313,24 @@
 
             <p>Have a question about a product or your order?</p>
 
-            <a
-                href="https://wa.me/923194070190"
-                target="_blank"
-                rel="noopener"
-            >
+            <a href="https://wa.me/923194070190"
+               target="_blank" rel="noopener">
                 Contact Us on WhatsApp
             </a>
 
             <p>WhatsApp: +92 319 4070190</p>
-
+            <p>
+                <a href="https://wa.me/c/923194070190"
+                   target="_blank" rel="noopener">
+                    View WhatsApp Catalogue
+                </a>
+            </p>
         </section>
 
     </main>
 
     <!-- FOOTER -->
     <footer id="footer">
-
         <div class="footer-brand">
             <h2>FATIMA HIJJAB STORE</h2>
             <p>Elegance in Every Layer.</p>
@@ -465,9 +351,8 @@
         <p class="copyright">
             © 2026 Fatima Hijjab Store. All Rights Reserved.
         </p>
-
     </footer>
-<script src="script.js"></script>
-    
+
+    <script src="script.js"></script>
 </body>
 </html>
